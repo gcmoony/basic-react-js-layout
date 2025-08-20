@@ -1,4 +1,4 @@
-:root {
+.layout {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -24,7 +24,7 @@
 
 .navbar,
 .footer,
-main {
+.main {
   padding: var(--spacing-sm);
 }
 
@@ -36,18 +36,19 @@ main {
 .navbar-logo,
 .navbar-desktop-links {
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   white-space: nowrap;
   gap: var(--spacing-sm);
 }
 
-main h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   text-align: center;
   margin-bottom: var(--spacing-sm);
 }
@@ -56,12 +57,12 @@ h6 {
   list-style: none;
 }
 
-a {
+.a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
-a:hover {
+.a:hover {
   color: #535bf2;
 }
 
@@ -72,16 +73,19 @@ a:hover {
   flex-direction: column;
 }
 
-img {
+.img {
   width: 100%;
 }
 
-main {
+.main {
   flex-grow: 1;
 
   max-width: 1240px;
-
   margin: 0 auto;
+}
+
+.project-links {
+  list-style: none;
 }
 
 .footer {
@@ -89,7 +93,7 @@ main {
   background-color: rgba(0, 0, 0, 0.644);
 }
 
-button {
+.button {
   padding: calc(var(--spacing-sm) / 2);
   text-align: center;
   display: block;
@@ -97,14 +101,14 @@ button {
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  .layout {
     color: #213547;
     background-color: #ffffff;
   }
-  a:hover {
+  .a:hover {
     color: #747bff;
   }
-  button {
+  .button {
     background-color: #f9f9f9;
   }
 }
