@@ -1,4 +1,4 @@
-import { basicRoutes } from "../../routes"
+import { projectRoutes } from "../../routes"
 import { Button } from "../elements/Button"
 import { Link } from "react-router"
 import styles from "./../../App.module.css"
@@ -12,7 +12,7 @@ export const Home = () => {
         <h2 className={styles.h2}>Project Links</h2>
         {
           <ul className={styles["project-links"]}>
-            {basicRoutes.map((route, index) => {
+            {projectRoutes.map((route, index) => {
               if (!route.navItem) {
                 return (
                   <li key={index}>
